@@ -44,6 +44,37 @@
         <div class="row">
           <div class="col-lg-12">
             <h1>&nbsp;</h1>
+
+            <h1>Continuous Integration!</h1>
+            <p>I initially had this site synchronized with my S3 Bucket using the <a href="https://github.com/scttnlsn/dandelion">dandelion</a> tool. However that meant that I had to execute a separate command to deploy the code. 
+            <pre>git add index.html
+git commit -m "Added great content about the new work I am doing"
+git push
+dandelion deploy #Grrrrr</pre> 
+            While one more command may not appear to be a lot. It is a 25% increase. That increase is also very risky as it is for a tool that is not part of my normal tool-chain. I know I will forget how to use it with any pause in use. Finally, automation is a first order feature of any product. I cannot automate the git commands, but I can automate deployments. 
+            </p>
+            <p>At first I search in vain for a tool that would work for me. My initial path was a <a href="https://aws.amazon.com/blogs/compute/dynamic-github-actions-with-aws-lambda/">complicated GitHub webhook to an AWS Lambda function</a>. While that sounds cool and I would have learned a lot, my gut told me that was way too complicated. I also looked at using <a href="http://docs.aws.amazon.com/codedeploy/latest/userguide/how-to-push-revision.html">CodeDeploy</a> and a lot of other dead ends. Eventually my GoogleFu was successful after a tweet begging for help. </p>
+            <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">I want to push files on commit to <a href="https://twitter.com/github">@github</a> repo to <a href="https://twitter.com/awscloud">@awscloud</a> S3. I cannot find an existing solution &amp; I must be using the wrong search term.</p>&mdash; Jacob Tomaw (@JacobTomaw) <a href="https://twitter.com/JacobTomaw/status/636617029231972352">August 26, 2015</a></blockquote>
+            <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <p>
+              I found <a href="http://www.thoughtworks.com/insights/blog/continuous-deployment-static-website-aws-snapci">instructions</a> to use <a href="https://snap-ci.com">Snap CI</a> to do deployments. I also discovered that <a href="http://docs.travis-ci.com/user/deployment/s3/">Travis CI can do the same thing.</a></p>
+            <p>
+              I now have a very simple pipeline in Snap CI that will deploy to S3. The important bit is the command that the stage will run.
+              <pre>aws s3 sync . s3://tomawtech.com --exclude .gitignore --exclude README.md --acl public-read --region us-east-1 --delete</pre>
+              Snap CI put in some good defaults, but it was still useful to check the <a href="http://docs.aws.amazon.com/cli/latest/reference/s3/sync.html">AWS S3 sync documentation</a>. The pipeline is setup to run with every commit and I will be notified if something bad ever happens. I can also see the status on the site's repository <a href="https://github.com/flatiron32/tomawtechdotcom">home page</a>.
+            <p>
+            <p>
+              <strong>In other news</strong> I added <a href="http://getbootstrap.com/">bootstrap</a> to the site with <a href="https://bootswatch.com/united/">united</a> theme from Bootswatch. I still have a lot to learn about Bootstrap.
+            </p>  
+            </p>
+              Upcoming To Do:
+              <ul>
+                <li>Email Forwarding</li>
+                <li>Logo</li>
+                <li>Site Template Processing - So every page looks the same.</li>
+              </ul>
+            </p>
+
             <h1>New Twitter Account</h1>
             <p>I just setup my twitter account <a href="https://twitter.com/TomawTech">@TomawTech</a>.</p>
             <p>

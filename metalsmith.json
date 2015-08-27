@@ -1,7 +1,8 @@
 {
   "plugins": {
     "metalsmith-layouts": {
-      "engine": "handlebars"
+      "engine": "handlebars",
+      "default": "layout.html"
     }
   }
 }

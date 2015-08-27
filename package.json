@@ -1,0 +1,23 @@
+{
+  "name": "tomawtech.com",
+  "version": "1.0.0",
+  "description": "The code to generate tomawtech.com",
+  "private": true,
+  "main": "index.js",
+  "devDependencies": {
+    "metalsmith": "^2.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flatiron32/tomawtechdotcom.git"
+  },
+  "author": "Jacob Tomaw",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/flatiron32/tomawtechdotcom/issues"
+  },
+  "homepage": "https://github.com/flatiron32/tomawtechdotcom#readme"
+}

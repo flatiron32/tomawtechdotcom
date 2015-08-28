@@ -7,7 +7,8 @@
   "devDependencies": {
     "handlebars": "^3.0.3",
     "metalsmith": "^2.0.1",
-    "metalsmith-layouts": "^1.4.0"
+    "metalsmith-layouts": "^1.4.0",
+    "metalsmith-page-titles": "^1.0.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

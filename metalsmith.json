@@ -1,5 +1,11 @@
 {
+  "metadata": {
+    "site": {
+      "title": "Tomaw Tech"    
+    }
+  },
   "plugins": {
+    "metalsmith-page-titles":{},
     "metalsmith-layouts": {
       "engine": "handlebars",
       "default": "layout.html"

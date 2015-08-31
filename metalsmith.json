@@ -5,11 +5,24 @@
     }
   },
   "plugins": {
+    "metalsmith-collections": {
+      "pages": {
+        "pattern": "pages/*.md"
+      },
+      "posts": {
+        "pattern": "posts/*.md",
+        "sortBy": "date",
+        "reverse": true
+      }
+    },
+    "metalsmith-markdown": {},
     "metalsmith-page-titles":{},
     "metalsmith-layouts": {
       "engine": "handlebars",
-      "default": "layout.html"
+      "partials": "./layouts/partials",
+      "default": "post.hbt"
     },
     "metalsmith-broken-link-checker": true
   }
 }
+

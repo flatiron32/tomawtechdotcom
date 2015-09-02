@@ -1,6 +1,7 @@
 ---
 title: Continuous Integration!
-date: 2015-08-25
+publishDate: 2015-08-25
+layout: post.hbt
 ---
 I initially had this site synchronized with my S3 Bucket using the [dandelion](https://github.com/scttnlsn/dandelion) tool. However that meant that I had to execute a separate command to deploy the code.
 

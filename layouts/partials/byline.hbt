@@ -1,0 +1,1 @@
+<small>Published <a href="/{{this.path}}">{{formatDate this.publishDate day="numeric" month="long" year="numeric"}}</a></small>

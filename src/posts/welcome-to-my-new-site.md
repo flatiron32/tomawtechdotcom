@@ -1,6 +1,7 @@
 ---
 title: Welcome to my new site!
-date: 2015-08-23
+publishDate: 2015-08-23
+layout: post.hbt
 ---
 I am trying to set up a new blog site from scratch to help learn more about the AWS service offerings and to share what I know and how I can help IT organizations. I want to document the process as much as possible. There is going to be a lot of churn at first.
 

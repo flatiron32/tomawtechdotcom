@@ -1,5 +1,6 @@
 ---
 title: Notes from DevOps Days Chicago 2015
+layout: page.hbt
 ---
 # Presentation Notes
 

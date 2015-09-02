@@ -1,6 +1,7 @@
 ---
 title: New Twitter Account
-date: 2015-08-24
+publishDate: 2015-08-24
+layout: post.hbt
 ---
 I just setup my twitter account [@TomawTech](https://twitter.com/TomawTech).
 

@@ -8,7 +8,9 @@ var metalsmith  = require('metalsmith'),
     pageTitles  = require('metalsmith-page-titles'),
     permalinks  = require('metalsmith-permalinks'),
     serve       = require('metalsmith-serve'),
+    sitemap     = require('metalsmith-sitemap'),
     watch       = require('metalsmith-watch');
+
 var Handlebars     = require('handlebars');
 var HandlebarsIntl = require('handlebars-intl');
 HandlebarsIntl.registerWith(Handlebars);
@@ -58,6 +60,7 @@ var siteBuild = metalsmith(__dirname)
       default: 'page.hbt',
     }))
   )
+  .use(sitemap())
   // .use(brokenCheck())
   // .use(serve({
   //   port: 8080,

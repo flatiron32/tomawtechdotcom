@@ -60,7 +60,9 @@ var siteBuild = metalsmith(__dirname)
       default: 'page.hbt',
     }))
   )
-  .use(sitemap())
+  .use(sitemap({
+    hostname: 'http://tomawtech.com'
+  }))
   // .use(brokenCheck())
   // .use(serve({
   //   port: 8080,

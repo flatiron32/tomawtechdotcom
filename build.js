@@ -1,4 +1,5 @@
 var metalsmith  = require('metalsmith'),
+    assets      = require('metalsmith-assets')
     branch      = require('metalsmith-branch'),
     brokenCheck = require('metalsmith-broken-link-checker'),
     collections = require('metalsmith-collections'),
@@ -63,6 +64,7 @@ var siteBuild = metalsmith(__dirname)
   .use(sitemap({
     hostname: 'http://tomawtech.com'
   }))
+  .use(assets())
   // .use(brokenCheck())
   // .use(serve({
   //   port: 8080,

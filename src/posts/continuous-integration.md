@@ -2,6 +2,8 @@
 title: Continuous Integration!
 publishDate: 2015-08-25
 layout: post.hbt
+description: I made a lot of changes to how I deploy this website. Now I use snap ci.
+keywords: Continuous Integration snap ci
 ---
 I initially had this site synchronized with my S3 Bucket using the [dandelion](https://github.com/scttnlsn/dandelion) tool. However that meant that I had to execute a separate command to deploy the code.
 

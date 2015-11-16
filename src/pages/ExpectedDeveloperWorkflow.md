@@ -134,9 +134,9 @@ All changes should be checked before being pushed to master.
 
 ### Commit Comments
 
-All commits should have comments in English that clearly state what value this changes added to the application. Ideally you write the commit comment before implementation to hold you change to a single purpose. 
+All commits should have comments in English that clearly state what value this changes added to the application. Ideally you write the commit comment before implementation to hold your change to a single purpose. Also the comment should describe the new behavior or capability of the system not what you did. Try to think of your commit message as a bullet point in a feature list. It's not about you, it's about the system.
 
-If your change is related to a JIRA issue, this issue number should be the first part of the commit message followed by ": " and then your plain English message. For instance, "JIRA-1234: Added ability for users to enter credit card number on payment details page."
+If your change is related to a JIRA issue, this issue number should be the first part of the commit message followed by ": " and then your plain English message. For instance, "JIRA-1234: Users can enter credit card number on payment details page."
 
 ### Peer Review
 

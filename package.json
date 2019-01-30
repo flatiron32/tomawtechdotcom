@@ -18,7 +18,7 @@
     "metalsmith-page-titles": "^1.0.2",
     "metalsmith-permalinks": "^0.4.0",
     "metalsmith-serve": "0.0.3",
-    "metalsmith-sitemap": "^0.1.0",
+    "metalsmith-sitemap": "^1.2.2",
     "metalsmith-watch": "^1.0.1"
   },
   "scripts": {
